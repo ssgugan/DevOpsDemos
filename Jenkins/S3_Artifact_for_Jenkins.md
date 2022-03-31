@@ -28,7 +28,7 @@ Follow this in  **[YouTube](https://youtu.be/GQZYpIRxi-g)**
 1. Configure S3 profile on Jenkins  
   `Manage Jenkins --> Configure Systems --> Amazon S3 profiles` 
    ```sh
-   Profile name : valaxy-s3-artifact 
+   Profile name : s3-artifact repository
    Use IAM Role : chose
    ```
 

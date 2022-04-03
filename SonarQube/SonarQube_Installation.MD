@@ -1,4 +1,4 @@
-# SonarQube Installation
+# SonarQube Installation with Mysql RDS
 
 SonarQube provides the capability to not only show health of an application but also to highlight issues newly introduced. With a Quality Gate in place, you can fix the leak and therefore improve code quality systematically.
 ### Follow this Article in **[YouTube](https://www.youtube.com/watch?v=zRQrcAi9UdU)**

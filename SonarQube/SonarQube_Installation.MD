@@ -13,6 +13,7 @@ Install MySQL client version
 
  ```sh
   # yum install mysql
+  # sudo amazon-linux-extras install java-openjdk11
  ```
 Download stable SonarQube version from below website. 
 - Website: https://www.sonarqube.org/downloads/

@@ -12,19 +12,17 @@ Integration SonarQube server with Jenkins is necessary to store your reports. Fo
 
 Login to Jenkins server and install sonarqube scanner. 
 
-- SonarQube scanner URL : https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner
-- Package : https://sonarsource.bintray.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-3.2.0.1227-linux.zip
-- 
 ```sh 
-# wget https://sonarsource.bintray.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-3.2.0.1227-linux.zip
-# unzip sonar-scanner-cli-3.2.0.1227-linux.zip
-# mv sonar-scanner-3.2.0.1227-linux /opt/sonar_scanner 
+# cd /opt/
+# wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.7.0.2747-linux.zip
+# unzip sonar-scanner-cli-4.7.0.2747-linux.zip
 ```
 
 Set SonarQube server details in sonar-scanner property file 
 
- - Sonar properties file: /opt/sonar_scanner/conf/sonar-scanner.properties
-   - sonar.host.url=http://`<SONAR_SERVER_IP>`:9000
+ - Sonar properties file: /opt/sonar-scanner-4.7.0.2747-linux/conf/
+ - vi sonar-scanner.properties
+     - sonar.host.url=http://`<SONAR_SERVER_IP>`:9000
 
 Login to Jenkins GUI console and install " SonarQube scanner" plugin
 
@@ -34,7 +32,7 @@ Configure SonarQube scanner home path
 
 - `Manage Jenkins` > `Global Tool Configuration` > `SonarQube Scanner` 
    - Name  : `sonar_scanner`
-   - SONAR_RUNNER_HOME : `/opt/sonar_scanner`
+   - SONAR_RUNNER_HOME : `/opt/sonar-scanner-4.7.0.2747-linux`
 
 Configure SonarQube server name and authentication token 
 - `Manage Jenkins` > `Configure Systems` > `SonarQube Servers`
